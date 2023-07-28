@@ -1,4 +1,4 @@
-import { MongoClient, ServerApiVersion } from "mongodb";
+import { MongoClient, ObjectId, ServerApiVersion } from "mongodb";
 
 const uri = `mongodb+srv://PC_BUILDER:117et8yIz6tyYpZW@cluster0.yai2s.mongodb.net/?retryWrites=true&w=majority`;
 
@@ -15,8 +15,18 @@ async function run(req, res) {
   try {
     await client.connect();
     const productsCollection = client.db("pc_builder").collection("components");
+    const { productId } = req.query;
 
-    if (req.method === "GET") {
+    if (req.method === "GET" && productId) {
+      const product = await productsCollection.findOne({
+        _id: new ObjectId(productId),
+      });
+      if (product) {
+        res.send({ message: "success", status: 200, data: product });
+      } else {
+        res.status(404).send({ message: "Product not found", status: 404 });
+      }
+    } else if (req.method === "GET") {
       const products = await productsCollection.find({}).toArray();
       res.send({ message: "success", status: 200, data: products });
     }
