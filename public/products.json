@@ -1,0 +1,652 @@
+{
+  "products": {
+    "CPU/Processor": [
+      {
+        "Product Name": "Intel Core i9-11900K",
+        "Category": "CPU/Processor",
+        "Status": "In Stock",
+        "Price": "$449.99",
+        "Description": "High-performance 11th Gen Intel processor for gaming and content creation.",
+        "Key Features": {
+          "Brand": "Intel",
+          "Model": "Core i9-11900K",
+          "Specification": "11th Gen, 8 cores, 16 threads",
+          "Socket": "LGA 1200",
+          "Clock Speed": "3.5 GHz (base), 5.3 GHz (max turbo)"
+        },
+        "Individual Rating": 4.7,
+        "Average Rating": 4.5,
+        "Reviews": [
+          {
+            "User Email": "user1@example.com",
+            "Comment": "Excellent performance in gaming and multitasking."
+          },
+          {
+            "User Email": "user2@example.com",
+            "Comment": "Highly recommended for enthusiasts and content creators."
+          },
+          {
+            "User Email": "user3@example.com",
+            "Comment": "Great processor for productivity tasks and video editing."
+          }
+        ]
+      },
+      {
+        "Product Name": "AMD Ryzen 9 5950X",
+        "Category": "CPU / Processor",
+        "Status": "In Stock",
+        "Price": "$599.99",
+        "Description": "Flagship AMD processor with 16 cores and 32 threads for extreme performance.",
+        "Key Features": {
+          "Brand": "AMD",
+          "Model": "Ryzen 9 5950X",
+          "Specification": "Zen 3, 16 cores, 32 threads",
+          "Socket": "AM4",
+          "Clock Speed": "3.4 GHz (base), 4.9 GHz (max boost)"
+        },
+        "Individual Rating": 4.9,
+        "Average Rating": 4.8,
+        "Reviews": [
+          {
+            "User Email": "user4@example.com",
+            "Comment": "Unmatched performance in both gaming and productivity."
+          },
+          {
+            "User Email": "user5@example.com",
+            "Comment": "Ideal for heavy multitasking and content creation tasks."
+          },
+          {
+            "User Email": "user6@example.com",
+            "Comment": "Worth the investment for serious gamers and professionals."
+          }
+        ]
+      },
+      {
+        "Product Name": "AMD Ryzen 7 5800X",
+        "Category": "CPU / Processor",
+        "Status": "In Stock",
+        "Price": "$399.99",
+        "Description": "Powerful AMD processor for gaming and multi-threaded applications.",
+        "Key Features": {
+          "Brand": "AMD",
+          "Model": "Ryzen 7 5800X",
+          "Specification": "Zen 3, 8 cores, 16 threads",
+          "Socket": "AM4",
+          "Clock Speed": "3.8 GHz (base), 4.7 GHz (max boost)"
+        },
+        "Individual Rating": 4.8,
+        "Average Rating": 4.6,
+        "Reviews": [
+          {
+            "User Email": "user7@example.com",
+            "Comment": "Impressive gaming performance and smooth multitasking."
+          },
+          {
+            "User Email": "user8@example.com",
+            "Comment": "Great value for money compared to Intel CPUs."
+          },
+          {
+            "User Email": "user9@example.com",
+            "Comment": "Excellent choice for gaming enthusiasts."
+          }
+        ]
+      }
+    ],
+    "Motherboard": [
+      {
+        "Product Name": "ASUS ROG Strix Z590-E",
+        "Category": "Motherboard",
+        "Status": "In Stock",
+        "Price": "$299.99",
+        "Description": "High-end gaming motherboard with robust power delivery and advanced features.",
+        "Key Features": {
+          "Brand": "ASUS",
+          "Model": "ROG Strix Z590-E",
+          "Chipset": "Intel Z590",
+          "Form Factor": "ATX",
+          "RAM Slots": "4 x DDR4 DIMM"
+        },
+        "Individual Rating": 4.8,
+        "Average Rating": 4.6,
+        "Reviews": [
+          {
+            "User Email": "user10@example.com",
+            "Comment": "Top-notch build quality and easy BIOS setup."
+          },
+          {
+            "User Email": "user11@example.com",
+            "Comment": "Stable overclocking performance and excellent features."
+          },
+          {
+            "User Email": "user12@example.com",
+            "Comment": "One of the best motherboards for high-end gaming setups."
+          }
+        ]
+      },
+      {
+        "Product Name": "MSI MAG B550 Tomahawk",
+        "Category": "Motherboard",
+        "Status": "In Stock",
+        "Price": "$199.99",
+        "Description": "Feature-rich B550 motherboard with excellent VRM cooling and PCIe 4.0 support.",
+        "Key Features": {
+          "Brand": "MSI",
+          "Model": "MAG B550 Tomahawk",
+          "Chipset": "AMD B550",
+          "Form Factor": "ATX",
+          "RAM Slots": "4 x DDR4 DIMM"
+        },
+        "Individual Rating": 4.7,
+        "Average Rating": 4.5,
+        "Reviews": [
+          {
+            "User Email": "user13@example.com",
+            "Comment": "Great value for a B550 motherboard with impressive features."
+          },
+          {
+            "User Email": "user14@example.com",
+            "Comment": "Stable and reliable performance for gaming and daily use."
+          },
+          {
+            "User Email": "user15@example.com",
+            "Comment": "Well-built motherboard with excellent I/O options."
+          }
+        ]
+      },
+      {
+        "Product Name": "GIGABYTE X570 AORUS Master",
+        "Category": "Motherboard",
+        "Status": "In Stock",
+        "Price": "$349.99",
+        "Description": "High-end X570 motherboard with robust power delivery and advanced cooling.",
+        "Key Features": {
+          "Brand": "GIGABYTE",
+          "Model": "X570 AORUS Master",
+          "Chipset": "AMD X570",
+          "Form Factor": "ATX",
+          "RAM Slots": "4 x DDR4 DIMM"
+        },
+        "Individual Rating": 4.9,
+        "Average Rating": 4.8,
+        "Reviews": [
+          {
+            "User Email": "user16@example.com",
+            "Comment": "Excellent VRM design for stable overclocking."
+          },
+          {
+            "User Email": "user17@example.com",
+            "Comment": "Impressive RGB lighting and premium build quality."
+          }
+        ]
+      }
+    ],
+    "RAM": [
+      {
+        "Product Name": "Corsair Vengeance RGB Pro 16GB",
+        "Category": "RAM",
+        "Status": "In Stock",
+        "Price": "$99.99",
+        "Description": "High-performance DDR4 RAM with customizable RGB lighting.",
+        "Key Features": {
+          "Brand": "Corsair",
+          "Model": "Vengeance RGB Pro",
+          "Capacity": "16GB (2 x 8GB)",
+          "Speed": "3200MHz",
+          "CAS Latency": "16"
+        },
+        "Individual Rating": 4.6,
+        "Average Rating": 4.4,
+        "Reviews": [
+          {
+            "User Email": "user19@example.com",
+            "Comment": "Sleek and vibrant RGB lighting with reliable performance."
+          },
+          {
+            "User Email": "user20@example.com",
+            "Comment": "Good value for money and stable overclocking."
+          },
+          {
+            "User Email": "user21@example.com",
+            "Comment": "Great RAM for gaming and multitasking."
+          }
+        ]
+      },
+      {
+        "Product Name": "G.Skill Trident Z Neo 32GB",
+        "Category": "RAM",
+        "Status": "In Stock",
+        "Price": "$149.99",
+        "Description": "High-speed DDR4 RAM with optimized performance for AMD Ryzen processors.",
+        "Key Features": {
+          "Brand": "G.Skill",
+          "Model": "Trident Z Neo",
+          "Capacity": "32GB (2 x 16GB)",
+          "Speed": "3600MHz",
+          "CAS Latency": "18"
+        },
+        "Individual Rating": 4.7,
+        "Average Rating": 4.6,
+        "Reviews": [
+          {
+            "User Email": "user22@example.com",
+            "Comment": "Superb RAM for Ryzen builds, works flawlessly with XMP."
+          },
+          {
+            "User Email": "user23@example.com",
+            "Comment": "Great heat spreader design and excellent performance."
+          },
+          {
+            "User Email": "user24@example.com",
+            "Comment": "Fast and stable RAM, perfect for gaming and multitasking."
+          }
+        ]
+      },
+      {
+        "Product Name": "Crucial Ballistix MAX 64GB",
+        "Category": "RAM",
+        "Status": "In Stock",
+        "Price": "$279.99",
+        "Description": "High-capacity DDR4 RAM with aggressive styling and XMP 2.0 support.",
+        "Key Features": {
+          "Brand": "Crucial",
+          "Model": "Ballistix MAX",
+          "Capacity": "64GB (2 x 32GB)",
+          "Speed": "4000MHz",
+          "CAS Latency": "18"
+        },
+        "Individual Rating": 4.8,
+        "Average Rating": 4.7,
+        "Reviews": [
+          {
+            "User Email": "user25@example.com",
+            "Comment": "Massive RAM capacity, perfect for RAM-intensive tasks."
+          },
+          {
+            "User Email": "user26@example.com",
+            "Comment": "XMP profile works like a charm, no stability issues."
+          },
+          {
+            "User Email": "user27@example.com",
+            "Comment": "Impressive design, great performance for content creation."
+          }
+        ]
+      }
+    ],
+    "Power Supply Unit": [
+      {
+        "Product Name": "EVGA SuperNOVA 750 G5",
+        "Category": "Power Supply Unit",
+        "Status": "In Stock",
+        "Price": "$129.99",
+        "Description": "750W 80+ Gold certified power supply with fully modular cables.",
+        "Key Features": {
+          "Brand": "EVGA",
+          "Model": "SuperNOVA 750 G5",
+          "Wattage": "750W",
+          "Efficiency": "80+ Gold",
+          "Modularity": "Fully Modular"
+        },
+        "Individual Rating": 4.9,
+        "Average Rating": 4.8,
+        "Reviews": [
+          {
+            "User Email": "user28@example.com",
+            "Comment": "Efficient and reliable power delivery, no issues so far."
+          },
+          {
+            "User Email": "user29@example.com",
+            "Comment": "Silent operation, great for high-end builds."
+          },
+          {
+            "User Email": "user30@example.com",
+            "Comment": "Modular design makes cable management a breeze."
+          }
+        ]
+      },
+      {
+        "Product Name": "Corsair RM850x",
+        "Category": "Power Supply Unit",
+        "Status": "In Stock",
+        "Price": "$149.99",
+        "Description": "850W 80+ Gold certified power supply with zero RPM fan mode.",
+        "Key Features": {
+          "Brand": "Corsair",
+          "Model": "RM850x",
+          "Wattage": "850W",
+          "Efficiency": "80+ Gold",
+          "Modularity": "Semi-Modular"
+        },
+        "Individual Rating": 4.8,
+        "Average Rating": 4.7,
+        "Reviews": [
+          {
+            "User Email": "user31@example.com",
+            "Comment": "Reliable and quiet, the fan stays off under light loads."
+          },
+          {
+            "User Email": "user32@example.com",
+            "Comment": "Great build quality, works well with gaming rigs."
+          },
+          {
+            "User Email": "user33@example.com",
+            "Comment": "Semi-modular design is convenient for cable management."
+          }
+        ]
+      },
+      {
+        "Product Name": "Seasonic Focus GX-650",
+        "Category": "Power Supply Unit",
+        "Status": "In Stock",
+        "Price": "$109.99",
+        "Description": "650W 80+ Gold certified power supply with fully modular design.",
+        "Key Features": {
+          "Brand": "Seasonic",
+          "Model": "Focus GX-650",
+          "Wattage": "650W",
+          "Efficiency": "80+ Gold",
+          "Modularity": "Fully Modular"
+        },
+        "Individual Rating": 4.7,
+        "Average Rating": 4.6,
+        "Reviews": [
+          {
+            "User Email": "user34@example.com",
+            "Comment": "Efficient and reliable, perfect for mid-range builds."
+          },
+          {
+            "User Email": "user35@example.com",
+            "Comment": "The fully modular design simplifies cable management."
+          },
+          {
+            "User Email": "user36@example.com",
+            "Comment": "Stable power delivery, no complaints so far."
+          }
+        ]
+      }
+    ],
+    "Storage Device": [
+      {
+        "Product Name": "Samsung 980 PRO 1TB NVMe SSD",
+        "Category": "Storage Device",
+        "Status": "In Stock",
+        "Price": "$199.99",
+        "Description": "High-speed NVMe SSD with PCIe 4.0 interface for ultra-fast data transfers.",
+        "Key Features": {
+          "Brand": "Samsung",
+          "Model": "980 PRO",
+          "Capacity": "1TB",
+          "Interface": "NVMe PCIe 4.0 x4",
+          "Read Speed": "7000MB/s",
+          "Write Speed": "5000MB/s"
+        },
+        "Individual Rating": 4.9,
+        "Average Rating": 4.8,
+        "Reviews": [
+          {
+            "User Email": "user37@example.com",
+            "Comment": "Blazing fast read and write speeds, perfect for OS and games."
+          },
+          {
+            "User Email": "user38@example.com",
+            "Comment": "Excellent choice for high-performance storage requirements."
+          },
+          {
+            "User Email": "user39@example.com",
+            "Comment": "Easy installation, noticeably faster boot times."
+          }
+        ]
+      },
+      {
+        "Product Name": "Western Digital WD Blue 2TB SATA SSD",
+        "Category": "Storage Device",
+        "Status": "In Stock",
+        "Price": "$249.99",
+        "Description": "High-capacity SATA SSD with reliable performance and durability.",
+        "Key Features": {
+          "Brand": "Western Digital",
+          "Model": "WD Blue",
+          "Capacity": "2TB",
+          "Interface": "SATA 6Gb/s",
+          "Read Speed": "560MB/s",
+          "Write Speed": "530MB/s"
+        },
+        "Individual Rating": 4.7,
+        "Average Rating": 4.6,
+        "Reviews": [
+          {
+            "User Email": "user40@example.com",
+            "Comment": "Spacious storage, works great for media and data."
+          },
+          {
+            "User Email": "user41@example.com",
+            "Comment": "Reliable and consistent performance for daily use."
+          },
+          {
+            "User Email": "user42@example.com",
+            "Comment": "Good value for a large capacity SSD."
+          }
+        ]
+      },
+      {
+        "Product Name": "Seagate BarraCuda 4TB HDD",
+        "Category": "Storage Device",
+        "Status": "In Stock",
+        "Price": "$99.99",
+        "Description": "High-capacity HDD with a large storage space for data backup and archiving.",
+        "Key Features": {
+          "Brand": "Seagate",
+          "Model": "BarraCuda",
+          "Capacity": "4TB",
+          "Interface": "SATA 6Gb/s",
+          "RPM": "5400",
+          "Cache": "256MB"
+        },
+        "Individual Rating": 4.6,
+        "Average Rating": 4.5,
+        "Reviews": [
+          {
+            "User Email": "user43@example.com",
+            "Comment": "Plenty of storage space for files and games."
+          },
+          {
+            "User Email": "user44@example.com",
+            "Comment": "Good for storing large media files and backups."
+          },
+          {
+            "User Email": "user45@example.com",
+            "Comment": "Decent performance for an HDD, great for the price."
+          }
+        ]
+      }
+    ],
+    "Monitor": [
+      {
+        "Product Name": "LG 27GL850-B 27-inch Gaming Monitor",
+        "Category": "Monitor",
+        "Status": "In Stock",
+        "Price": "$449.99",
+        "Description": "27-inch QHD gaming monitor with 144Hz refresh rate and 1ms response time.",
+        "Key Features": {
+          "Brand": "LG",
+          "Model": "27GL850-B",
+          "Display Size": "27 inches",
+          "Resolution": "2560 x 1440 (QHD)",
+          "Refresh Rate": "144Hz",
+          "Response Time": "1ms",
+          "Panel Type": "Nano IPS"
+        },
+        "Individual Rating": 4.8,
+        "Average Rating": 4.7,
+        "Reviews": [
+          {
+            "User Email": "user46@example.com",
+            "Comment": "Fantastic colors and smooth gaming experience."
+          },
+          {
+            "User Email": "user47@example.com",
+            "Comment": "Fast response time, great for competitive gaming."
+          },
+          {
+            "User Email": "user48@example.com",
+            "Comment": "QHD resolution makes a significant difference in games."
+          }
+        ]
+      },
+      {
+        "Product Name": "ASUS TUF VG27AQ 27-inch Gaming Monitor",
+        "Category": "Monitor",
+        "Status": "In Stock",
+        "Price": "$399.99",
+        "Description": "27-inch WQHD gaming monitor with 165Hz refresh rate and ELMB Sync.",
+        "Key Features": {
+          "Brand": "ASUS",
+          "Model": "TUF VG27AQ",
+          "Display Size": "27 inches",
+          "Resolution": "2560 x 1440 (WQHD)",
+          "Refresh Rate": "165Hz",
+          "Response Time": "1ms (MPRT)",
+          "Panel Type": "IPS"
+        },
+        "Individual Rating": 4.7,
+        "Average Rating": 4.6,
+        "Reviews": [
+          {
+            "User Email": "user49@example.com",
+            "Comment": "Smooth gaming performance, no screen tearing."
+          },
+          {
+            "User Email": "user50@example.com",
+            "Comment": "Vibrant colors and great viewing angles."
+          },
+          {
+            "User Email": "user51@example.com",
+            "Comment": "ELMB Sync is a game-changer for motion clarity."
+          }
+        ]
+      },
+      {
+        "Product Name": "Dell U2719D 27-inch Monitor",
+        "Category": "Monitor",
+        "Status": "In Stock",
+        "Price": "$299.99",
+        "Description": "27-inch QHD monitor with IPS panel for accurate colors and wide viewing angles.",
+        "Key Features": {
+          "Brand": "Dell",
+          "Model": "U2719D",
+          "Display Size": "27 inches",
+          "Resolution": "2560 x 1440 (QHD)",
+          "Refresh Rate": "60Hz",
+          "Response Time": "5ms (gray-to-gray)",
+          "Panel Type": "IPS"
+        },
+        "Individual Rating": 4.6,
+        "Average Rating": 4.5,
+        "Reviews": [
+          {
+            "User Email": "user52@example.com",
+            "Comment": "Excellent monitor for office work and productivity tasks."
+          },
+          {
+            "User Email": "user53@example.com",
+            "Comment": "Clear and sharp display with minimal bezels."
+          }
+        ]
+      }
+    ],
+    "Others": [
+      {
+        "Product Name": "NVIDIA GeForce RTX 3080",
+        "Category": "Others",
+        "Status": "In Stock",
+        "Price": "$899.99",
+        "Description": "High-end gaming GPU with 10GB GDDR6X memory and real-time ray tracing.",
+        "Key Features": {
+          "Brand": "NVIDIA",
+          "Model": "GeForce RTX 3080",
+          "VRAM": "10GB GDDR6X",
+          "Memory Bus": "320-bit",
+          "CUDA Cores": "8704",
+          "Clock Speed": "1.44 GHz (base), 1.71 GHz (boost)"
+        },
+        "Individual Rating": 4.9,
+        "Average Rating": 4.8,
+        "Reviews": [
+          {
+            "User Email": "user54@example.com",
+            "Comment": "Unmatched performance for 4K gaming and ray tracing."
+          },
+          {
+            "User Email": "user55@example.com",
+            "Comment": "Runs cool and quiet even during intense gaming sessions."
+          },
+          {
+            "User Email": "user56@example.com",
+            "Comment": "Expensive but worth it for enthusiasts and content creators."
+          }
+        ]
+      },
+      {
+        "Product Name": "Logitech G Pro Wireless Gaming Mouse",
+        "Category": "Others",
+        "Status": "In Stock",
+        "Price": "$129.99",
+        "Description": "Wireless gaming mouse with lightweight design and HERO 25K sensor.",
+        "Key Features": {
+          "Brand": "Logitech",
+          "Model": "G Pro Wireless",
+          "Sensor": "HERO 25K",
+          "DPI Range": "100 - 25,600",
+          "Buttons": "6 programmable buttons",
+          "Battery Life": "Up to 60 hours"
+        },
+        "Individual Rating": 4.8,
+        "Average Rating": 4.7,
+        "Reviews": [
+          {
+            "User Email": "user57@example.com",
+            "Comment": "Super responsive and accurate sensor, great for gaming."
+          },
+          {
+            "User Email": "user58@example.com",
+            "Comment": "Comfortable grip and long-lasting battery life."
+          },
+          {
+            "User Email": "user59@example.com",
+            "Comment": "Highly recommended for competitive gamers."
+          }
+        ]
+      },
+      {
+        "Product Name": "Razer BlackWidow V3 Mechanical Keyboard",
+        "Category": "Others",
+        "Status": "In Stock",
+        "Price": "$149.99",
+        "Description": "Mechanical gaming keyboard with Razer Green switches and customizable RGB.",
+        "Key Features": {
+          "Brand": "Razer",
+          "Model": "BlackWidow V3",
+          "Switches": "Razer Green",
+          "Key Rollover": "N-key rollover",
+          "Backlighting": "Customizable RGB",
+          "Wrist Rest": "Detachable wrist rest"
+        },
+        "Individual Rating": 4.7,
+        "Average Rating": 4.6,
+        "Reviews": [
+          {
+            "User Email": "user60@example.com",
+            "Comment": "Clicky and tactile switches, perfect for typing and gaming."
+          },
+          {
+            "User Email": "user61@example.com",
+            "Comment": "Solid build quality, feels premium on the desk."
+          },
+          {
+            "User Email": "user62@example.com",
+            "Comment": "Customizable RGB lighting adds flair to the setup."
+          }
+        ]
+      }
+    ]
+  }
+}

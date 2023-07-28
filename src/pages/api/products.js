@@ -14,7 +14,6 @@ const client = new MongoClient(uri, {
 async function run(req, res) {
   try {
     await client.connect();
-    console.log("Database connected");
     const productsCollection = client.db("pc_builder").collection("components");
 
     if (req.method === "GET") {
