@@ -28,11 +28,11 @@ const Navbar = () => {
   }, [profileRef]);
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-lg fixed top-0 left-0 right-0">
       <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <Link href="#">
+            <Link href="/">
               <Image src="/images/logo.jpg" alt="logo" height={60} width={60} />
             </Link>
           </div>
