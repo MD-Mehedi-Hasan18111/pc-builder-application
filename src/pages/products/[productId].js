@@ -1,4 +1,5 @@
 import RootLayout from "@/components/layout/RootLayout";
+import Heading from "@/components/ui/Heading";
 import React, { useState } from "react";
 import StarRatings from "react-star-ratings";
 
@@ -102,6 +103,7 @@ const ProductDetails = ({ product }) => {
 
   return (
     <div>
+      <Heading title={"Product Details"} />
       <div>
         <img
           src={product?.image}

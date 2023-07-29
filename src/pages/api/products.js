@@ -15,12 +15,23 @@ async function run(req, res) {
   try {
     await client.connect();
     const productsCollection = client.db("pc_builder").collection("components");
-    const { productId } = req.query;
+    const { productId, category } = req.query;
 
     if (req.method === "GET" && productId) {
       const product = await productsCollection.findOne({
         _id: new ObjectId(productId),
       });
+      if (product) {
+        res.send({ message: "success", status: 200, data: product });
+      } else {
+        res.status(404).send({ message: "Product not found", status: 404 });
+      }
+    } else if (req.method === "GET" && category) {
+      const product = await productsCollection
+        .find({
+          Category: category,
+        })
+        .toArray();
       if (product) {
         res.send({ message: "success", status: 200, data: product });
       } else {

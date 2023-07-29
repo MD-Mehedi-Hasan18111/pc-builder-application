@@ -145,43 +145,43 @@ const Navbar = () => {
                   className="absolute top-6 z-10 mt-2 bg-white rounded-lg shadow-lg py-1"
                 >
                   <Link
-                    href="/cpu-processor"
+                    href="/categories/cpu"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                   >
                     CPU/Processor
                   </Link>
                   <Link
-                    href="/motherboard"
+                    href="/categories/motherboard"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                   >
                     Motherboard
                   </Link>
                   <Link
-                    href="/ram"
+                    href="/categories/ram"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                   >
                     RAM
                   </Link>
                   <Link
-                    href="/powerSupplyUnit"
+                    href="/categories/powersupply"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                   >
                     Power Supply Unit
                   </Link>
                   <Link
-                    href="/storageDevice"
+                    href="/categories/storagedevice"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                   >
                     Storage Device
                   </Link>
                   <Link
-                    href="/monitor"
+                    href="/categories/monitor"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                   >
                     Monitor
                   </Link>
                   <Link
-                    href="/others"
+                    href="/categories/others"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                   >
                     Others
@@ -246,43 +246,43 @@ const Navbar = () => {
                     className="absolute top-8 z-10 mt-2 bg-white rounded-lg shadow-lg py-1"
                   >
                     <Link
-                      href="/cpu-processor"
+                      href="/categories/cpu"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                     >
                       CPU/Processor
                     </Link>
                     <Link
-                      href="/motherboard"
+                      href="/categories/motherboard"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                     >
                       Motherboard
                     </Link>
                     <Link
-                      href="/ram"
+                      href="/categories/ram"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                     >
                       RAM
                     </Link>
                     <Link
-                      href="/powerSupplyUnit"
+                      href="/categories/powersupply"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                     >
                       Power Supply Unit
                     </Link>
                     <Link
-                      href="/storageDevice"
+                      href="/categories/storagedevice"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                     >
                       Storage Device
                     </Link>
                     <Link
-                      href="/monitor"
+                      href="/categories/monitor"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                     >
                       Monitor
                     </Link>
                     <Link
-                      href="/others"
+                      href="/categories/others"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
                     >
                       Others

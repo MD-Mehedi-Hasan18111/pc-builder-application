@@ -3,12 +3,12 @@ import CategoryProductCard from "@/components/ui/CategoryProductCard";
 import Heading from "@/components/ui/Heading";
 import React from "react";
 
-const CPU = ({ products }) => {
+const Others = ({ products }) => {
   return (
     <div>
-      <Heading title={"CPU/Processor"} />
+      <Heading title={"Others"} />
 
-      <h2 className="text-2xl font-bold mb-[68px]">CPU / Processor</h2>
+      <h2 className="text-2xl font-bold [68px]">Others</h2>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
         {products.map((product) => (
           <CategoryProductCard key={product._id} product={product} />
@@ -18,14 +18,12 @@ const CPU = ({ products }) => {
   );
 };
 
-CPU.getLayout = function getLayout(page) {
+Others.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(
-    `http://localhost:3000/api/products?category=CPU/Processor`
-  );
+  const res = await fetch(`http://localhost:3000/api/products?category=Others`);
   const data = await res.json();
   return {
     props: {
@@ -35,4 +33,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default CPU;
+export default Others;

@@ -3,12 +3,14 @@ import Banner from "@/components/ui/Banner";
 import FeaturedCategories from "@/components/ui/FeaturedCategories";
 import FeaturedProducts from "@/components/ui/FeaturedProducts";
 import Footer from "@/components/ui/Footer";
+import Heading from "@/components/ui/Heading";
 import Navbar from "@/components/ui/Navbar";
 import React from "react";
 
 const Home = ({ products }) => {
   return (
     <div>
+      <Heading title={"Home"} />
       <Banner />
       <FeaturedProducts products={products} />
       <FeaturedCategories />
