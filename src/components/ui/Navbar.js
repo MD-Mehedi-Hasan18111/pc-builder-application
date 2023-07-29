@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState, useRef, useEffect } from "react";
 
 const Navbar = () => {
+  const router = useRouter();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,7 +41,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center -mr-2 -my-2 md:hidden">
             <button
-              onClick={() => alert("Redirect to PC Builder page")}
+              onClick={() => router.push("/PC-Builder")}
               type="button"
               className="py-2 px-4 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 mr-6"
             >
@@ -85,7 +88,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex space-x-10">
             <button
-              onClick={() => alert("Redirect to PC Builder page")}
+              onClick={() => router.push("/PC-Builder")}
               type="button"
               className="py-2 px-4 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
             >

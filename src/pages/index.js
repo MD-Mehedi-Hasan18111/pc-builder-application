@@ -6,8 +6,12 @@ import Footer from "@/components/ui/Footer";
 import Heading from "@/components/ui/Heading";
 import Navbar from "@/components/ui/Navbar";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Home = ({ products }) => {
+
+  // const state = useSelector((state) => state.builder.selectedProducts)
+
   return (
     <div>
       <Heading title={"Home"} />

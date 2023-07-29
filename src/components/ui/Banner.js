@@ -10,7 +10,7 @@ const Banner = () => {
         <p className="text-lg md:text-xl text-white mb-8">
           Choose the best components and create your custom PC.
         </p>
-        <Link href="/pc-builder">
+        <Link href="/PC-Builder">
           <p className="inline-block px-6 py-3 bg-white text-purple-600 rounded-lg hover:bg-purple-600 hover:text-white transition-colors duration-300">
             PC Builder
           </p>
