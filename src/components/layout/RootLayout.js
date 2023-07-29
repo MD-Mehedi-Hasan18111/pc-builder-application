@@ -6,7 +6,7 @@ const RootLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div className="py-[50px] px-[100px]">{children}</div>
+      <div className="py-[50px] md:px-[100px] px-[20px]">{children}</div>
       <Footer />
     </>
   );
