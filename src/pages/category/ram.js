@@ -22,7 +22,7 @@ Ram.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(`http://localhost:3000/api/products?category=RAM`);
   const data = await res.json();
   return {
