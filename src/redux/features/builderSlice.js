@@ -23,10 +23,13 @@ const builderSlice = createSlice({
     chooseSelectCategory: (state, action) => {
       state.chooseSelectedCategory = action.payload;
     },
+    clearBuilder: (state, action) => {
+      state.selectedProducts = action.payload;
+    },
   },
 });
 
-export const { addProductToBuilder, chooseSelectCategory } =
+export const { addProductToBuilder, chooseSelectCategory, clearBuilder } =
   builderSlice.actions;
 
 export default builderSlice.reducer;
