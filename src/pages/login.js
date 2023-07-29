@@ -13,7 +13,7 @@ const LoginPage = () => {
           className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-md"
           onClick={() =>
             signIn("github", {
-              callbackUrl: "http://localhost:3000/",
+              callbackUrl: "https://pc-builder-application.vercel.app/",
             })
           }
         >
