@@ -41,7 +41,7 @@ async function run(req, res) {
       const products = await productsCollection.find({}).toArray();
       res.send({ message: "success", status: 200, data: products });
     }
-    return productsCollection;
+    // return productsCollection;
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();

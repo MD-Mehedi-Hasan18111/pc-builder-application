@@ -25,6 +25,7 @@ const builderSlice = createSlice({
     },
     clearBuilder: (state, action) => {
       state.selectedProducts = action.payload;
+      state.chooseSelectedCategory = "";
     },
   },
 });
