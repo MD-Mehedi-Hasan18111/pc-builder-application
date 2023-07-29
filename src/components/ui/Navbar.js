@@ -1,9 +1,12 @@
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useRef, useEffect } from "react";
 
 const Navbar = () => {
+  const { data } = useSession();
+
   const router = useRouter();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,44 +97,63 @@ const Navbar = () => {
             >
               PC Builder
             </button>
-            <div className="relative group">
+            {data?.user ? (
+              <div className="relative group">
+                <button
+                  onClick={toggleProfile}
+                  type="button"
+                  className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                >
+                  <span className="hidden md:inline-block">
+                    {data?.user?.name}
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 md:inline-block ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M12 14l9-5-9-5-9 5 9 5z"
+                    />
+                  </svg>
+                </button>
+                {isProfileOpen && (
+                  <div
+                    ref={profileRef}
+                    className="absolute z-10 mt-2 bg-white rounded-lg shadow-lg"
+                    onBlur={() => setIsProfileOpen(false)}
+                    tabIndex={0}
+                  >
+                    <div className="py-2 px-4 text-sm font-medium text-gray-700">
+                      {data?.user?.name}
+                    </div>
+                    <div className="pb-3 px-4 text-sm text-gray-500">
+                      {data?.user?.email}
+                    </div>
+                    <button
+                      onClick={() => signOut()}
+                      type="button"
+                      className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                    >
+                      <span className="inline-block">Log Out</span>
+                    </button>
+                  </div>
+                )}
+              </div>
+            ) : (
               <button
-                onClick={toggleProfile}
+                onClick={() => router.push("/login")}
                 type="button"
-                className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:text-purple-500"
               >
-                <span className="hidden md:inline-block">John Doe</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 md:inline-block ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 14l9-5-9-5-9 5 9 5z"
-                  />
-                </svg>
+                <span className="inline-block">Log In</span>
               </button>
-              {isProfileOpen && (
-                <div
-                  ref={profileRef}
-                  className="absolute z-10 mt-2 bg-white rounded-lg shadow-lg"
-                  onBlur={() => setIsProfileOpen(false)}
-                  tabIndex={0}
-                >
-                  <div className="py-2 px-4 text-sm font-medium text-gray-700">
-                    John Doe
-                  </div>
-                  <div className="pb-3 px-4 text-sm text-gray-500">
-                    john.doe@example.com
-                  </div>
-                </div>
-              )}
-            </div>
+            )}
             <div className="relative group">
               <button
                 onMouseEnter={() => setIsMenuOpen(true)}
@@ -197,42 +219,63 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <div className="md:hidden">
             <div className="mt-4 pt-2 pb-3 space-y-1">
-              <div className="relative group">
+              {data?.user ? (
+                <div className="relative group">
+                  <button
+                    onClick={toggleProfile}
+                    type="button"
+                    className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                  >
+                    <span className="inline-block">
+                      {data?.user?.name}
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 md:inline-block ml-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 14l9-5-9-5-9 5 9 5z"
+                      />
+                    </svg>
+                  </button>
+                  {isProfileOpen && (
+                    <div
+                      ref={profileRef}
+                      className="absolute z-10 mt-2 bg-white rounded-lg shadow-lg"
+                      onBlur={() => setIsProfileOpen(false)}
+                      tabIndex={0}
+                    >
+                      <div className="py-2 px-4 text-sm font-medium text-gray-700">
+                        {data?.user?.name}
+                      </div>
+                      <div className="pb-3 px-4 text-sm text-gray-500">
+                        {data?.user?.email}
+                      </div>
+                      <button
+                        onClick={() => signOut()}
+                        type="button"
+                        className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                      >
+                        <span className="inline-block">Log Out</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
                 <button
-                  onClick={toggleProfile}
+                  onClick={() => router.push("/login")}
                   type="button"
-                  className="flex items-center mt-2 w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-purple-50"
+                  className="flex items-center py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:text-purple-500 ml-[5px]"
                 >
-                  <span className="md:inline-block">John Doe</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 md:inline-block ml-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M12 14l9-5-9-5-9 5 9 5z"
-                    />
-                  </svg>
+                  <span className="inline-block">Log In</span>
                 </button>
-                {isProfileOpen && (
-                  <div
-                    ref={profileRef}
-                    className="absolute z-10 mt-2 bg-white rounded-lg shadow-lg"
-                  >
-                    <div className="py-2 px-4 text-sm font-medium text-gray-700">
-                      John Doe
-                    </div>
-                    <div className="pb-3 px-4 text-sm text-gray-500">
-                      john.doe@example.com
-                    </div>
-                  </div>
-                )}
-              </div>
+              )}
               <div className="relative group">
                 <button
                   onMouseEnter={() => setIsMenuOpen(true)}

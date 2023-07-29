@@ -113,7 +113,7 @@ const ProductDetails = ({ product }) => {
         <h2 className="md:text-3xl text-[20px] text-center mt-4">
           {product?.ProductName}
         </h2>
-        <div className="mt-4 md:w-[240px] mx-auto flex items-center">
+        <div className="mt-4 md:w-[240px] w-[250px] mx-auto flex items-center">
           <h3 className="font-[500] md:text-[16px] text-[14px] mr-1.5">
             Avg. Rating:
           </h3>
@@ -128,7 +128,7 @@ const ProductDetails = ({ product }) => {
             <p className="ml-1.5">({averageRating})</p>
           </div>
         </div>
-        <div className="mt-6 flex items-center md:w-[400px] w-[270px] mx-auto">
+        <div className="mt-6 flex items-center md:w-[450px] w-[300px] mx-auto">
           <div className="md:text-[18px] text-[14px] bg-blue-500 text-white md:px-[12px] px-[6px] py-[4px] rounded-[5px] md:mr-10 mr-4">
             {product?.Category}
           </div>
